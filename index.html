@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumineux Luxe Villas</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: url('https://images.unsplash.com/photo-1597751161262-3e8c4602fca1?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+      background-size: cover;
+    }
+    .backdrop {
+      background-color: rgba(0, 0, 0, 0.45);
+      backdrop-filter: blur(2px);
+    }
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 2.5s ease-in forwards;
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body class="h-screen w-screen flex items-center justify-center text-white">
+  <div class="backdrop p-10 rounded-xl max-w-2xl text-center fade-in">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Rooted in beauty. Designed for belonging.</h1>
+    <p class="text-lg md:text-xl italic mb-6">An heirloom of peace, crafted in stone and story.</p>
+    <span class="text-sm uppercase tracking-wide">Coming Soon</span>
+  </div>
+</body>
+</html>
