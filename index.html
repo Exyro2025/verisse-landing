@@ -6,10 +6,18 @@
   <title>Lumineux Luxe Villas</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
+    @keyframes fadeIn {
+  to { opacity: 1; }
+}
+.animate-fadeIn {
+  animation: fadeIn 2s ease-in forwards;
+}
+
     body {
       background: url('./lavender.jpg') no-repeat center center fixed;
       background-size: cover;
     }
+
     .backdrop {
       background-color: rgba(0, 0, 0, 0.45);
       backdrop-filter: blur(2px);
@@ -24,6 +32,8 @@
   </style>
 </head>
 <body class="h-screen w-screen flex items-center justify-center text-white">
+  <img src="logo_top_left.png" alt="Lumineux Luxe Villas Logo"
+     class="absolute top-6 left-6 w-44 opacity-0 animate-fadeIn delay-200" />
   <div class="backdrop p-10 rounded-xl max-w-2xl text-center fade-in">
     <h1 class="text-4xl md:text-5xl font-bold mb-4">Rooted in beauty. Designed for belonging.</h1>
     <p class="text-lg md:text-xl italic mb-6">An heirloom of peace, crafted in stone and story.</p>
